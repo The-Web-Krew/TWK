@@ -4,6 +4,7 @@ import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 
 
 import Navbar from './components/Navbar';
+import Heros from './components/Heros';
 import About from './components/About';
 import Tech from './components/Tech';
 import Footer from './components/Footer';
@@ -22,14 +23,12 @@ function App() {
 
 {/* Add Menu Component */}
 <Navbar/>
+<Heros/>
 
 <Routes> 
   <Route exact path="/" component={Home}/>
 </Routes>
-    <h1>Hello TWK</h1>
-    <h1>Hello TWK</h1>
-    <h1>Hello TWK</h1>
-    <h1>Hello TWK</h1>
+ 
   <About/>
     <Tech/>
   <Footer/>

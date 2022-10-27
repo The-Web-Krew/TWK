@@ -1,6 +1,7 @@
 .techWeUse {
   width: 80vw;
   margin: auto;
+  font-size: 1.5rem;
 
   display: grid;
   grid-template-columns: 5% 35% 60%;

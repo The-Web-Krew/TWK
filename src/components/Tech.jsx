@@ -4,7 +4,7 @@ import "../assets/css/tech.css";
 function Tech() {
   return (
     <section>
-    <div className="techWeUse">
+    <div className="techWeUse gradientText">
           <div></div>
 
       <div>

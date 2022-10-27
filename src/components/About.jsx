@@ -6,9 +6,9 @@ function About() {
     <>
     <section>
       <div className="about">
-        <h3 className="aboutTest">About Us</h3>
+        <h3 className="aboutTest ">About Us</h3>
 
-        <h1 className="aboutTest">
+        <h1 className="aboutTest gradientText">
           We are a Digital
           <br />
           Design & Development Agency

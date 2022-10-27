@@ -12,7 +12,9 @@ html {
 
 body {
   /* background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%); */
-  background: linear-gradient(112.1deg,rgb(18, 16, 35) 11.4%, rgba(43, 65, 98, 1) 70.2%);
+  /* background: linear-gradient(112.1deg,rgb(18, 16, 35) 11.4%, rgba(43, 65, 98, 1) 70.2%); */
+  background: linear-gradient(112.1deg,   rgb(19, 28, 63) 11.4%,   rgb(62, 33, 89) 70.2%);
+
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -28,7 +30,7 @@ section {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background:   rgba(43, 65, 98, 1) ;
+  background:  rgb(62, 33, 89) 70.2% ;
   
   border-radius: 0px;
 }
@@ -38,4 +40,31 @@ section {
   background:  rgb(20, 30, 48); 
   border-radius: 20px;
 }
+
+
+.heroBackground {
+  top: 0%;
+  width: 100vw;
+  height: 100vh;
+}
+.heroBackgroundImage {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+
+/* Text Gradient */
+.gradientText {
+  background: linear-gradient(
+    to right, 
+    rgba(151, 149, 239, 1),
+    rgba(249, 197, 209, 1)
+
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
 
