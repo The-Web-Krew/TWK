@@ -49,7 +49,7 @@ form {
   margin: auto;
 }
 
-input {
+.inputContact {
   background: none;
   border: none;
   border-bottom: 2px solid #fff;
@@ -58,7 +58,7 @@ input {
   margin: 2.5%;
 }
 
-textarea {
+.inputTextarea {
   background: none;
   border: 2px solid #fff;
   height: 120px;
@@ -96,6 +96,11 @@ textarea ::placeholder {
   .contactForm {
     width: 80%;
     grid-template-columns: 100%;
+    height: auto;
+
+  }
+  .details {
+    justify-self: center;
   }
 }
 
@@ -106,16 +111,24 @@ textarea ::placeholder {
     grid-template-columns: 100%;
     margin: auto;
   }
+
+  .letsConnectButton {
+    width: 15vw;
+  }
+
+ 
 }
 
 @media (max-width: 500px) {
   .contactForm {
     width: 100%;
     grid-template-columns: 100%;
-    height: auto;
+  }
+  .letsConnectButton {
+    width: 30vw;
   }
 
-  input {
+  .inputContact{
     background: none;
     border: none;
     border-bottom: 2px solid #fff;

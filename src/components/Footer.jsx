@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/css/footer.css';
-
+import {FiSend} from 'react-icons/fi';
 function Footer() {
   return (
     
@@ -55,7 +55,8 @@ function Footer() {
             <div className="input-form">                           
               <form action="#" className="form">
                   <input type="text" className="input" placeholder="Enter Email Address" />
-                  <button type="button"><i className="fas fa-paper-plane"></i></button>
+                 
+                  <button type="button"><FiSend size={20}/></button>
               </form>
           </div>
   

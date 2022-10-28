@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../assets/css/navbar.css';
 import {AiOutlineClose} from 'react-icons/ai'
 import {HiOutlineMenuAlt4} from 'react-icons/hi'
+import {Link} from 'react-router-dom'
 
 function Navbar() {
 
@@ -19,9 +20,15 @@ function Navbar() {
 }
     </div>
     <ul className='navbarLinks '>
-        <li className='navlinkText' >Home</li>
-        <li className='navlinkText' > About </li>
-        <li className='navlinkText' >Contact</li>
+        <li className='navlinkText' >
+        <Link to="/">Home</Link>
+        </li>
+        <li className='navlinkText' >
+        <Link to="/about">About</Link>
+        </li>
+        <li className='navlinkText' >
+        <Link to="/contact">Contact</Link>
+        </li>
     </ul>
     {/* <div>
     </div> */}
@@ -35,9 +42,15 @@ function Navbar() {
     <div  onClick={handleNav}  className={ ( nav ? 'show' : 'hide' )}>
     <ul className='mediumView'>
     <h1>Logo</h1>
-        <li className='navlinkText' >Home</li>
-        <li className='navlinkText'>About </li>
-        <li className='navlinkText'>Contact</li>
+    <li className='navlinkText' >
+        <Link to="/">Home</Link>
+        </li>
+        <li className='navlinkText' >
+        <Link to="/about">About</Link>
+        </li>
+        <li className='navlinkText' >
+        <Link to="/contact">Contact</Link>
+        </li>
     </ul>
     </div>
     </div>

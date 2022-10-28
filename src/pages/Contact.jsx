@@ -5,6 +5,7 @@ import TWK1 from '../assets/Images/TWK1.png'
 
 
 function Contact() {
+    console.log("contact")
   return (
     <div>
       <div className="contactHead">
@@ -17,18 +18,18 @@ function Contact() {
       </div>
       <div className="contactForm">
         <form>
-          <input type="text"  required placeholder="Name" />
+          <input  className='inputContact' type="text"  required placeholder="Name" />
           <br/>
 
-          <input type="email"  required placeholder="Email"/>
+          <input className='inputContact' type="email"  required placeholder="Email"/>
           <br/>
 
-          <input type="text"  required placeholder="Number"/>
+          <input className='inputContact' type="text"  required placeholder="Number"/>
           <br/>
 
-          <input type="text"  required placeholder="Company"/>
+          <input className='inputContact' type="text"  required placeholder="Company"/>
           <br/>
-          <textarea class="" name="message" required placeholder="Message"></textarea>
+          <textarea className='inputTextarea'  name="message" required placeholder="Message"></textarea>
           <button className=' letsConnectButton buttonColor '> <h3>Send</h3> </button>
 
 

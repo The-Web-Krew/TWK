@@ -1,40 +1,36 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-import Heros from "./components/Heros";
-import About from "./components/About";
-import Tech from "./components/Tech";
-import LetTalk from "./components/letTalk";
+
 import Footer from "./components/Footer";
 
 import Contact from './pages/Contact';
 import Home from "./pages/Home";
+import NotFound from "./pages/notFound";
 
-// import Index from './pages/Index.jsx';
 
 function App() {
   return (
     <div className="App">
-      <Router basename="/">
-        {/* Add Menu Component */}
-        <Navbar />
-        <Heros />
+    <BrowserRouter>   
+    <Navbar/>
+    <Routes>
 
-        <Routes>
-          <Route exact path="/" component={Home} />
+
+          <Route index element={<Home/>} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="*" element={<NotFound/>} />
+
+
+
+       
+
+    
         </Routes>
 
-        <About />
-        <Tech />
-        <LetTalk />
-
-        <Footer />
-
-        <Contact />
-
-      </Router>
-
+        <Footer/>
+</BrowserRouter>
 
     </div>
   );
