@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Halo from 'vanta/dist/vanta.halo.min.js'
-// Make sure window.THREE is defined, e.g. by including three.min.js in the document head using a <script> tag
 
 const Heros = (props) => {
   const [vantaEffect, setVantaEffect] = useState(null)
@@ -16,6 +15,8 @@ const Heros = (props) => {
         minHeight: 200.00,
         minWidth: 200.00,
         backgroundColor: 0x0,
+        backgroundAlpha: 0,
+
         amplitudeFactor: 1.20,
         xOffset: 0.21
       }))
@@ -28,6 +29,7 @@ const Heros = (props) => {
   return (
     <div className='heroBackground'>
     <div  className='heroBackgroundImage' ref={myRef}>
+    <h1>TWK</h1>
   </div>
 
 </div>

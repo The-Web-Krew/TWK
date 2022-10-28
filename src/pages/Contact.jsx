@@ -1,14 +1,15 @@
-import React from "react";
+import React from 'react'
 import "../assets/css/contact.css";
 import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
 import TWK1 from '../assets/Images/TWK1.png'
 
 
-function Contact() {
-    console.log("contact")
+function Contact(props) {
+
+  
   return (
     <div>
-      <div className="contactHead">
+      <div className="contactHead" >
         <h3 className="letsTalkTexth3 gradientText">Lets Talk </h3>
         <h1 className="letsTalkText gradientText">About Your Next Project</h1>
       </div>

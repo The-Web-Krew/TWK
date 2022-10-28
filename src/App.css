@@ -54,6 +54,13 @@ section {
   height: 100vh;
   object-fit: cover;
 }
+.heroBackground h1 
+{
+  top:36%;
+  left:20%;
+  font-size: 5rem;
+
+}
 
 
 /* Text Gradient */
@@ -106,6 +113,7 @@ img {
 
 a:link {
   text-decoration: none;
+  text-decoration-line: none;
 }
 
 

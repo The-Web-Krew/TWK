@@ -1,6 +1,7 @@
 .contactHead {
   width: 100vw;
   height: 60vh;
+  padding: 7%;
   display: grid;
   align-content: center;
   justify-items: center;
