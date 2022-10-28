@@ -8,12 +8,14 @@
 
 footer {
     position: relative;
-    background: linear-gradient(112.1deg,   rgb(22, 26, 40) 11.4%,   rgb(37, 19, 54) 70.2%);
+  background: linear-gradient(112.1deg,   rgb(22, 26, 40) 11.4%,   rgb(37, 19, 54) 70.2%);
 
   /* background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%); */
     /* background: linear-gradient(to right, #cc99ff 0%, #ccffff 100%); */
   color: azure;
   width: 100vw;
+
+ 
 }
 
 .footer-div {

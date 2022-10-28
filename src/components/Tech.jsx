@@ -1,14 +1,16 @@
 import React from "react";
 import "../assets/css/tech.css";
+import TWK3 from '../assets/Images/TWK3.png'
 
 function Tech() {
   return (
     <section>
-    <div className="techWeUse gradientText">
+    <h1 className="aboutText gradientText">Tech We Use</h1>
+    <div className="techWeUse">
           <div></div>
 
       <div>
-        <h1 >TECH WE USE</h1>
+      <img  className="TWK3" src={TWK3} alt='/' />
       </div>
       <div className="tech">
         <div
