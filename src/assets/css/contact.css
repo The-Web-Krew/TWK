@@ -1,0 +1,139 @@
+.contactHead {
+  width: 100vw;
+  height: 60vh;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+
+}
+
+.contactForm {
+  width: 80vw;
+  height: 70vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 1rem;
+  justify-items: stretch;
+  justify-content: space-evenly;
+  align-content: center;
+
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  /* background-image: url(../Images/TWK4.png  ); */
+}
+.formImage {
+    position: absolute;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+}
+
+.formImageAlignment {
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+
+
+form {
+  width: 80%;
+  margin: auto;
+}
+
+input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  height: 30px;
+  width: 90%;
+  margin: 2.5%;
+}
+
+textarea {
+  background: none;
+  border: 2px solid #fff;
+  height: 120px;
+  width: 90%;
+  margin: 2.5%;
+}
+
+::placeholder {
+  color: black;
+  font-size: 20px;
+}
+
+textarea ::placeholder {
+  padding: 40px;
+}
+
+.details {
+  width: 80%;
+  height: 100%;
+}
+
+.contactLi {
+  margin: 3%;
+}
+
+.contactIconLi {
+  margin: 15%;
+
+  display: inline;
+  margin: 3% auto;
+  margin-right: 4%;
+}
+
+@media (max-width: 1150px) {
+  .contactForm {
+    width: 80%;
+    grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .letsTalk {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 100%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .contactForm {
+    width: 100%;
+    grid-template-columns: 100%;
+    height: auto;
+  }
+
+  input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    height: 30px;
+    width: 90%;
+    margin: 5% auto;
+  }
+
+  textarea {
+    background: none;
+    border: 2px solid #fff;
+    height: 120px;
+    width: 90%;
+    margin: 5% auto;
+  }
+
+  ::placeholder {
+    color: black;
+    font-size: 15px;
+  }
+}

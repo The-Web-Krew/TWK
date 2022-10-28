@@ -8,6 +8,7 @@ import Tech from "./components/Tech";
 import LetTalk from "./components/letTalk";
 import Footer from "./components/Footer";
 
+import Contact from './pages/Contact';
 import Home from "./pages/Home";
 
 // import Index from './pages/Index.jsx';
@@ -29,7 +30,12 @@ function App() {
         <LetTalk />
 
         <Footer />
+
+        <Contact />
+
       </Router>
+
+
     </div>
   );
 }
