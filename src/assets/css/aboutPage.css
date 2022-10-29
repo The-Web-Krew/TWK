@@ -1,0 +1,59 @@
+.developmentProcess {
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    gap: 2rem;
+    justify-items: start;
+
+}
+
+
+.developmentProcessImage {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.developmentProcessImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.developmentProcessDetails {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+.developerSection {
+    margin: 10% auto;
+}
+
+.developmentProcessDetails ul li h3 {
+margin: 1% 0; 
+}
+
+
+
+@media (max-width: 1150px) {
+    .developmentProcess {
+        width: 80vw;
+        grid-template-columns: repeat(1,100%);
+    }
+    .developmentProcessImage {
+        order: 0;
+    }
+    .developmentProcessDetails {
+        order: 1;
+    }
+  }
+  
+  @media (max-width: 900px) {
+   
+  }
+  
+  @media (max-width: 500px) {
+
+  }
+  

@@ -8,12 +8,18 @@
 
 footer {
     position: relative;
-  background: linear-gradient(112.1deg,   rgb(22, 26, 40) 11.4%,   rgb(37, 19, 54) 70.2%);
+    /* background: linear-gradient(112.1deg,   rgb(0, 0, 0) 21.4%,   rgb(62, 33, 89) 90.2%); */
 
   /* background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%); */
     /* background: linear-gradient(to right, #cc99ff 0%, #ccffff 100%); */
   color: azure;
   width: 100vw;
+  background: rgba( 255, 255, 255, 0.10 );
+/* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+backdrop-filter: blur( 2px );
+-webkit-backdrop-filter: blur( 2px );
+/* border-radius: 10px; */
+border-top: 1px solid rgba( 255, 255, 255, 0.18 );
 
  
 }

@@ -1,5 +1,6 @@
 .contactHead {
-  width: 100vw;
+  width: 80vw;
+  margin: auto;
   height: 60vh;
   padding: 7%;
   display: grid;
@@ -18,7 +19,6 @@
   justify-items: stretch;
   justify-content: space-evenly;
   align-content: center;
-
   background: rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(2.5px);

@@ -11,11 +11,11 @@
 html {
   overflow-y: scroll;
 }
-
 body {
   /* background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%); */
   /* background: linear-gradient(112.1deg,rgb(18, 16, 35) 11.4%, rgba(43, 65, 98, 1) 70.2%); */
-  background: linear-gradient(112.1deg,   rgb(19, 28, 63) 11.4%,   rgb(62, 33, 89) 70.2%);
+  /* background: linear-gradient(112.1deg,   rgb(19, 28, 63) 11.4%,   rgb(62, 33, 89) 70.2%); */
+  background: linear-gradient(112.1deg,   rgb(0, 0, 0) 21.4%,   rgb(62, 33, 89) 90.2%);
 
   font-family: 'Quicksand', sans-serif;
 }
@@ -48,6 +48,7 @@ section {
   top: 0%;
   width: 100vw;
   height: 100vh;
+  
 }
 .heroBackgroundImage {
   width: 100vw;
