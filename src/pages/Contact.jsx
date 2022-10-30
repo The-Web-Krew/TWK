@@ -8,6 +8,7 @@ import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 
 function Contact() {
+  
   const form = useRef();
   const MySwal = withReactContent(Swal);
 

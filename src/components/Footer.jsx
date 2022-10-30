@@ -1,7 +1,59 @@
-import React from 'react';
+import React, { useRef } from "react";
 import '../assets/css/footer.css';
-import {FiSend} from 'react-icons/fi';
+import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
+import { FiSend } from "react-icons/fi";
+
+import {Link} from 'react-router-dom'
+import emailjs from "@emailjs/browser";
+
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
 function Footer() {
+  
+  const formMail = useRef();
+  const MySwal = withReactContent(Swal);
+
+  const sendFooterEmail = (e) => {
+    e.preventDefault();
+    // console.log("Function");
+    // console.log(form.curret);
+
+    emailjs
+      .sendForm(
+        "service_9aifya2", //Service ID
+        "template_vnx5owl", //template ID
+        formMail.current,
+        "WMpQ1QLYiSWNFNJ0Y" //API
+      )
+      .then(
+        (result) => {
+          // console.log(result.text);
+          // console.log("yes");
+
+          MySwal.fire({
+            title: <strong style={{color:'#000000'}}>Email Send</strong>,
+            html: <i  style={{color:'#000000'}} >Our Team will React to you soon!</i>,
+            icon: "success",
+          });
+
+
+        },
+        (error) => {
+          // console.log(error.text);
+          // console.log("No");
+          
+          MySwal.fire({
+            title: <strong style={{color:'#000000'}}>Error</strong>,
+            html: <i  style={{color:'#000000'}} >There is some problem sending Email!</i>,
+            icon: "error",
+          });
+        }
+      );
+  };
+  
+
+
   return (
     
     <footer>
@@ -20,27 +72,34 @@ function Footer() {
             <h3>Follow Us</h3>
             
   
-            <li className="icon" > <i className="fab fa-twitter"></i></li>
-            <li className="icon" > <i className="fab fa-instagram"></i></li>
-            <li className="icon" > <i className="fab fa-linkedin"></i></li>
-  
+            <ul className="contactLi">
+            <li className="contactIconLi">
+              <FaInstagram size={30} />
+            </li>
+            <li className="contactIconLi">
+              <FaFacebook size={30} />
+            </li>
+            <li className="contactIconLi">
+              <FaTwitter size={30} />
+            </li>
+          </ul>
           </div>
   
           <div className="sectionTwo">
             <h1>Nav Links</h1>
             <div className="navLinks">
             <div>
-            <li>One</li>
-            <li>Two</li>
-            <li>Three</li>
-            <li>Four</li>
+            <li className='navbarLinkFooters' >
+        <Link to="/">Home</Link>
+        </li>
+        <li className='navbarLinkFooters' >
+        <Link to="/about">About</Link>
+        </li>
+        <li className='navbarLinkFooters' >
+        <Link to="/contact">Contact</Link>
+        </li>
           </div>
-          <div>
-              <li>One</li>
-              <li>Two</li>
-              <li>Three</li>
-              <li>Four</li>
-            </div>
+     
           </div>
           </div>
           
@@ -53,10 +112,9 @@ function Footer() {
             </p>
   
             <div className="input-form">                           
-              <form action="#" className="form">
-                  <input type="text" className="input" placeholder="Enter Email Address" />
-                 
-                  <button type="button"><FiSend size={20}/></button>
+              <form ref={formMail} className="form">
+                  <input type="text" className="input" name="from_footer_mail" placeholder="Enter Email Address" />
+                  <button className="sendButton" type="button" onClick={sendFooterEmail}><FiSend size={20}/></button>
               </form>
           </div>
   

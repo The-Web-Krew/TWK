@@ -20,8 +20,13 @@ backdrop-filter: blur( 2px );
 -webkit-backdrop-filter: blur( 2px );
 /* border-radius: 10px; */
 border-top: 1px solid rgba( 255, 255, 255, 0.18 );
-
  
+}
+
+.sendButton {
+  border-radius: 4px;
+  background-color: #000;
+  color: #000;
 }
 
 .footer-div {
@@ -88,7 +93,7 @@ li {
   background-color: #fff;
   border: medium none;
   border-radius: 5px;
-  color: #333;
+  color: #000;
   display: block;
   font-size: 15px;
   font-weight: 500;
@@ -102,9 +107,11 @@ li {
   text-align: center;
   text-transform: capitalize;
   width: 100%;
-
 }
 
+.input::placeholder {
+  color: #000;
+}
 button {
     background-color: transparent;
     border: none;

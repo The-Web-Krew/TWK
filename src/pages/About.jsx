@@ -2,6 +2,7 @@ import React from 'react'
 // import React, { useState, useEffect, useRef } from 'react'
 import "../assets/css/aboutPage.css";
 import TWK from "../assets/Images/TWK5.png";
+
 // import Halo from 'vanta/dist/vanta.waves.min.js'
 
 

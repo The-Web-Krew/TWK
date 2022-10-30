@@ -62,6 +62,19 @@
     background: #000;
     
 } */
+.heroIcon{
+  justify-self: center;
+}
+
+.heroIcon:hover{
+  justify-self: center;
+
+ 
+}
+
+
+
+
 
 .serviceCard:hover {
   /* background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
@@ -140,6 +153,9 @@
     grid-template-columns: 100%;
   }
   
+  .heroIcon {
+    margin: 2.5% auto;
+  }
   
   }
   
@@ -161,5 +177,5 @@
 
     
   }
-  
   }
+  

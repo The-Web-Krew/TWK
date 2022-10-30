@@ -6,8 +6,9 @@
   box-sizing:border-box;
   align-items: center;
   justify-content: center;
-
+  font-family: 'Quicksand', sans-serif;
 }
+
 html {
   overflow-y: scroll;
 }
@@ -142,3 +143,25 @@ a:link {
     }
     
     }
+
+  @media (max-height: 500px ) {
+    .show {
+      height: 100vh!important;
+    }
+
+    .serviceCard {
+      width: 90%;
+      height: 60vh!important;
+      margin: 5%;
+      grid-template-columns: 30% 70%!important;
+  }
+  .contactHead {
+    width: 100vw!important;
+    height: 100vh!important;    
+}
+
+.aboutLetsTalkText {
+  font-size: 2rem!important;
+}
+
+  }
