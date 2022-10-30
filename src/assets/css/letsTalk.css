@@ -69,7 +69,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 20%;
+  width: 130px;
   margin: 2%;
   will-change: transform,opacity;
   z-index: 0;

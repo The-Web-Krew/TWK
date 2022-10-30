@@ -19,12 +19,22 @@
   justify-items: stretch;
   justify-content: space-evenly;
   align-content: center;
-  background: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(2.5px);
-  -webkit-backdrop-filter: blur(2.5px);
+
+  /* background: rgba( 255, 255, 255, 0.2 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 2px );
+  -webkit-backdrop-filter: blur( 2px );
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  /* box-shadow: 0px 2px 0px 0px rgba( 31, 38, 135, 0.37 ); */
+
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  display: grid;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
 
   /* background-image: url(../Images/TWK4.png  ); */
 }
@@ -34,6 +44,8 @@
     height: 70vh;
     display: flex;
 }
+
+
 
 .formImageAlignment {
     width: 60%;
@@ -68,8 +80,9 @@ form {
 }
 
 ::placeholder {
-  color: black;
-  font-size: 20px;
+  color: #ffffff;
+  font-size: 15px;
+  padding-left: 10px;
 }
 
 textarea ::placeholder {
@@ -91,6 +104,10 @@ textarea ::placeholder {
   display: inline;
   margin: 3% auto;
   margin-right: 4%;
+}
+
+.letsConnectButton {
+  width: 10vw;
 }
 
 @media (max-width: 1150px) {
@@ -117,6 +134,17 @@ textarea ::placeholder {
     width: 15vw;
   }
 
+  
+.formImageAlignment {
+  width: 70%;
+  height: 70%;
+  margin: auto;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+  
+
  
 }
 
@@ -127,6 +155,11 @@ textarea ::placeholder {
   }
   .letsConnectButton {
     width: 30vw;
+  }
+  form {
+    width: 85%;
+    align-self: center;
+    justify-self: center;
   }
 
   .inputContact{
@@ -148,6 +181,19 @@ textarea ::placeholder {
 
   ::placeholder {
     color: black;
-    font-size: 15px;
+    font-size: 16px;
+    padding: 3% 2% 5% 2%;
   }
+
+  
+.formImage {
+  position: absolute;
+  width: 100vw;
+  top:90%;
+  height: 40%;
+  display: flex;
+}
+
+
+
 }
