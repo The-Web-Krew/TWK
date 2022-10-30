@@ -18,10 +18,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_yi5tea8",
-        "template_c46qf67",
+        "service_9aifya2", //Service ID
+        "template_ep4p14w", //template ID
         form.current,
-        "RJSErRSyoZcY2qXBM"
+        "WMpQ1QLYiSWNFNJ0Y" //API
       )
       .then(
         (result) => {
