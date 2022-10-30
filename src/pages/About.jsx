@@ -1,49 +1,50 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React from 'react'
+// import React, { useState, useEffect, useRef } from 'react'
 import "../assets/css/aboutPage.css";
 import TWK from "../assets/Images/TWK5.png";
-import Halo from 'vanta/dist/vanta.waves.min.js'
+// import Halo from 'vanta/dist/vanta.waves.min.js'
 
 
 function About() {
 
-  const [vantaEffect, setVantaEffect] = useState(null)
+  // const [vantaEffect, setVantaEffect] = useState(null)
   
-  const myRef = useRef(null)
-  useEffect(() => {
-    if (!vantaEffect) {
-      setVantaEffect(Halo({
-        el: myRef.current,
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        color: 'rgb(0, 0, 0)',
-        shininess: 50.00,
-  waveHeight: 22.00,
-  waveSpeed: 0.60,
-  zoom: 1.10
+  // const myRef = useRef(null)
+  // useEffect(() => {
+  //   if (!vantaEffect) {
+  //     setVantaEffect(Halo({
+  //       el: myRef.current,
+  //       mouseControls: true,
+  //       touchControls: true,
+  //       gyroControls: false,
+  //       minHeight: 200.00,
+  //       minWidth: 200.00,
+  //       scale: 1.00,
+  //       scaleMobile: 1.00,
+  //       color: 'rgb(0, 0, 0)',
+  //       shininess: 50.00,
+  // waveHeight: 22.00,
+  // waveSpeed: 0.60,
+  // zoom: 1.10
 
-      }))
-    }
-    return () => {
-      if (vantaEffect) vantaEffect.destroy()
-    }
-  }, [vantaEffect])
+  //     }))
+  //   }
+  //   return () => {
+  //     if (vantaEffect) vantaEffect.destroy()
+  //   }
+  // }, [vantaEffect])
 
 
   return (
     <div >
-    <div className="aboutVanta" ref={myRef}>
+    {/* <div className="aboutVanta" /*ref={myRef}/> */}
       <div className="contactHead">
         <h1 className="  aboutLetsTalkText gradientText">
           "Dignity does not consist in possessing honors, but in the
           consciousness that we deserve them."
         </h1>
       </div>
-      </div>
+      {/* </div> */}
       <div className="developmentProcess">
         <div className="developmentProcessImage">
           <img src={TWK} alt="/" />
