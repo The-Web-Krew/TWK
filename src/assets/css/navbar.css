@@ -23,6 +23,9 @@
 .mediumView {
     display: none;
 }
+.mediumViewLogo {
+    display: none;
+}
 .b {
     font-size: 1.5rem;
     z-index: 10;
@@ -36,6 +39,9 @@
     display: none;
 }
 
+.mediumViewLogo {
+    display: block;
+}
 .mediumView {
     height: 70%;
     display: grid;
