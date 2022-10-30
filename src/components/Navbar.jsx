@@ -40,8 +40,9 @@ function Navbar() {
     </div>
 
     <div  onClick={handleNav}  className={ ( nav ? 'show' : 'hide' )}>
-    <ul className='mediumView'>
     <h1>Logo</h1>
+
+    <ul className='mediumView'>
         <li className='navlinkText' >
         <Link to="/">Home</Link>
         </li>

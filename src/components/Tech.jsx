@@ -18,7 +18,7 @@ function Tech() {
     <div  className="techWeUse">
           <div></div>
 
-      <div>
+      <div className='imageCenter'>
       <img   className="TWK3" src={TWK3} alt='/' />
       </div>
       <div  className="tech">

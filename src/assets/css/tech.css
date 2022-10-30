@@ -115,14 +115,29 @@ animation: float 6s ease-in-out infinite;
           width: 80%;;
         grid-template-columns: 50% 50%;
         justify-items: center;
-      
       }
+
+      
+.card {
+  margin: 5px;
+  width: 125px;
+  height: 125px;
+  border-radius: 20px;
+}
 }
 
 
 @media ( max-width: 500px){
 
+  .card {
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+  }
     .tech {
         width: 100%;    
     }
+
+  
 }

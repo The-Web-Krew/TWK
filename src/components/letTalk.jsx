@@ -14,7 +14,7 @@ function letTalk() {
 
 
 </div>
-<div>
+<div className='imageCenter'>
     <img src={TWK4} alt='/' />
 </div>
 </div>

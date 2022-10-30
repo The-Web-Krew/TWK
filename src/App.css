@@ -33,9 +33,9 @@ section {
 /* Track */
 ::-webkit-scrollbar-track {
   background:  rgb(62, 33, 89) 70.2%1 ;
-  
-  border-radius: 0px;
-}
+  border-radius: 20px;
+
+  }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -142,3 +142,10 @@ a:link {
     }
     
     }
+  
+    /* Image center */
+    .imageCenter {
+      display: grid;
+      justify-items: center;
+  }
+    

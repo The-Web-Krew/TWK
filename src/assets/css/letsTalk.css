@@ -92,6 +92,10 @@
             display: grid;
             grid-template-columns: 100%;
             margin:auto;
+            
+        }
+        .letsTalkText {
+            font-size: 3rem;
         }
 }
 
@@ -101,4 +105,8 @@
     .tech {
         width: 100%;    
     }
+    .buttonColor {
+        width: 45%;
+    }
+ 
 }

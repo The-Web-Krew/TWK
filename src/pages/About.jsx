@@ -6,7 +6,7 @@ function About() {
   return (
     <div>
       <div className="contactHead">
-        <h1 className="letsTalkText gradientText">
+        <h1 className="  aboutLetsTalkText gradientText">
           "Dignity does not consist in possessing honors, but in the
           consciousness that we deserve them."
         </h1>
