@@ -1,6 +1,7 @@
 .developmentProcess {
     width: 80vw;
     margin: auto;
+    margin-top:7%;
     display: grid;
     grid-template-columns: repeat(2,50%);
     gap: 2rem;

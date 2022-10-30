@@ -33,9 +33,9 @@ section {
 /* Track */
 ::-webkit-scrollbar-track {
   background:  rgb(62, 33, 89) 70.2%1 ;
-  border-radius: 20px;
-
-  }
+  
+  border-radius: 0px;
+}
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -60,18 +60,8 @@ section {
   top:36%;
   left:20%;
   font-size: 5rem;
-}
 
-/* .heroBackground::before {
-  content: "";
-  position: absolute;
-  bottom: -8%;
-  width: 100%;
-  height: 50px;
-  z-index: 168;
-  background: linear-gradient(112.1deg,   rgb(0, 0, 0) 21.4%,   rgb(62, 33, 89) 90.2%);
-  opacity: 0.02;
-} */
+}
 
 
 /* Text Gradient */
@@ -152,12 +142,3 @@ a:link {
     }
     
     }
-  
-    /* Image center */
-    .imageCenter {
-      display: grid;
-      justify-items: center;
-      height: 35vh;
-
-  }
-    
