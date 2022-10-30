@@ -147,5 +147,7 @@ a:link {
     .imageCenter {
       display: grid;
       justify-items: center;
+      height: 35vh;
+
   }
     
