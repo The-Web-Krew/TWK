@@ -58,11 +58,18 @@ div {
   left:75px;
 }
 
+.imageCenter {
+  display: flex;
+}
+
+
 .TWK3 
 {
 width: 80%;
 height: 80%;
 animation: float 6s ease-in-out infinite;
+margin: auto;
+    display: flex;
 }
 
 
@@ -116,6 +123,14 @@ animation: float 6s ease-in-out infinite;
         grid-template-columns: 50% 50%;
         justify-items: center;
       }
+      .TWK3 
+{
+width: 60%;
+height: auto;
+animation: float 6s ease-in-out infinite;
+margin: auto;
+    display: flex;
+}
 
       
 .card {
@@ -138,6 +153,15 @@ animation: float 6s ease-in-out infinite;
     .tech {
         width: 100%;    
     }
+    .TWK3 
+{
+width: 80%;
+height: 80%;
+animation: float 6s ease-in-out infinite;
+margin: auto;
+margin-top:6%;
+    display: flex;
+}
 
   
 }
